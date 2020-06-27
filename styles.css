@@ -1,8 +1,3 @@
-.parallax-wrapper {
-    overflow-y: hidden;
-}
-
-
 .announcement{
     height: 35px;
     display: flex;
@@ -35,7 +30,6 @@ header {
     }
 }
 
-
 .hero--ben-profile{
     position: absolute;
     bottom: 0;
@@ -48,7 +42,6 @@ header {
     }
 }
 
-
 .hero--logo{
     width: 350px;
     position: absolute;
@@ -58,82 +51,78 @@ header {
 
 .hero--textarea{
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 15px;
 }
 
-.hero h1, h2{
+.hero--textarea h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
-    line-height: 1;
+    line-height: .35;
+    color: #fff;
 }
 
 @media(max-width: 680px){
-    .hero h1, h2{
-        font-family: 'Montserrat', sans-serif;
+    .hero--textarea h1, h2{
         font-size: 35px;
-        line-height: 1;
     }
 }
 
+body{
+    margin: 0;
+}
 
-
-
-
-
-
-
-
-section, main{
+section{
     padding: 15px;
 }
-/* Only for the pen */
-html, body {
-    margin: 0;
-    min-height: 100%;
-    font-family: sans-serif;
-}
 
-main {
-    min-height: 500px;
-}
-
-.parallax {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-h1, p, ul, li {
-    margin: 0;
-    color: #fff;
-}
-
-p, ul, li{
-    font-family: "Merriweather", Sans-serif;
-    font-weight: 100px;
-    line-height: 1.8em;
-    color: #797979;
-    font-size: 25px;
-}
-
-header h1 {
-    color: #fff;
+section.-light h2{
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
+    text-transform: uppercase;
+    color: #099cff;
+    border-left: 10px solid #bc2125;
+    padding-left: 15px;
 }
 
-section {
-    background-color: #2b2d42;
+section.-light{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+section.-light ul{
+    font-weight: 100;
+    line-height: 1.8em;
+    list-style-type: none;
+}
+
+section.-dark{
+    background: #17065b;
+    color: #fff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+}
+
+section.-dark h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    border-left: 10px solid #bc2125;
+    padding-left: 15px;
+}
+
+section.-dark ul{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8em;
+    list-style-type: none;
 }
 
 
-p {
-    font-weight: 500;
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.6;
-    padding-top: 80px;
-}
+
+
+
+
+
