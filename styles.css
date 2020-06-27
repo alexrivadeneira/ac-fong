@@ -45,8 +45,26 @@ header {
 .hero--logo{
     width: 350px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    left: -300px;
+    top: 0px;
+    left: 0px;
+    transform: rotate(15deg);
+    animation: drive 3s forwards;
+}
+
+@keyframes drive{
+    0%   {
+        left: -500px;
+    }
+    50%   {
+        left: 300px;
+    }
+    100%   {
+        top: 0px;
+        left: 0px;
+        /*width: 350px;*/
+        transform: rotate(0deg);
+    }
 }
 
 .hero--textarea{
@@ -55,11 +73,22 @@ header {
     left: 15px;
 }
 
+
+
 .hero--textarea h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     line-height: .35;
     color: #fff;
+    transition: .5s ease-in-out;
+
+}
+
+.hero--textarea h1:hover{
+
+    transform: translateY(-10px) scale(1.02);
+    color: #bc2125;
+
 }
 
 @media(max-width: 680px){
@@ -119,6 +148,8 @@ section.-dark ul{
     line-height: 1.8em;
     list-style-type: none;
 }
+
+
 
 
 
